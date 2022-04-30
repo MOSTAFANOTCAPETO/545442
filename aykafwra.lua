@@ -164,7 +164,7 @@ return var
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,1878261073,2178}  
+local ListSudos ={Sudo_Id,1878261073,2104604903,2011420301}  
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -185,11 +185,11 @@ Addictive = Redis:sismember(aykafwra.."Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(aykafwra.."Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if tonumber(UserId) == 1878261073 then
-Status = 'المبرمج زياد' 
-elseif tonumber(UserId) == 2178 then
-Status = 'no NEM'
-elseif tonumber(UserId) == 2112 then
-Status = 'نو نيم'
+Status = 'مالك السورس' 
+elseif tonumber(UserId) == 2104604903 then
+Status = 'مبرمج الس ورس'
+elseif tonumber(UserId) == 2011420301 then
+Status = 'مطور السورس'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
 elseif UserId == aykafwra then
@@ -768,9 +768,9 @@ Distinguished = Redis:sismember(aykafwra.."Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if tonumber(UserId) == 1878261073 then
 Status = true
-elseif tonumber(UserId) == 2112 then
+elseif tonumber(UserId) == 2104604903 then
 Status = true
-elseif tonumber(UserId) == 2178 then
+elseif tonumber(UserId) == 2011420301 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -814,7 +814,9 @@ Distinguished = Redis:sismember(aykafwra.."Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if tonumber(UserId) == 1878261073 then
 Status = true
-elseif tonumber(UserId) == 2112 then
+elseif tonumber(UserId) == 2104604903 then
+Status = true
+elseif tonumber(UserId) == 2011420301 then
 Status = true
 elseif UserId == Sudo_Id then    
 Status = true
@@ -983,10 +985,13 @@ elseif Statusrestricted(msg.chat_id,msg.sender.user_id).SilentGroup == true then
 return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 end
 if tonumber(msg.sender.user_id) == 1878261073 then
-msg.Name_Controller = 'المبرمج زياد'
+msg.Name_Controller = 'مالك السورس'
 msg.The_Controller = 1
-elseif tonumber(msg.sender.user_id) == 2112 then
-msg.Name_Controller = 'نو نيم '
+elseif tonumber(msg.sender.user_id) == 2104604903 then
+msg.Name_Controller = 'المبرمج السورس'
+msg.The_Controller = 1
+elseif tonumber(msg.sender.user_id) == 2011420301 then
+msg.Name_Controller = 'المطور السورس'
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender.user_id) == true then  
 msg.The_Controller = 1
@@ -5697,10 +5702,13 @@ if Controller(msg_chat_id,UserId) == 'المطور الاساسي' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*𖥔 عذرآ لا تستطيع استخدام الامر على ⦗ "..Controller(msg_chat_id,UserId).." ⦘ *","md",true)  
 end
 if UserId == "1878261073" then
+return LuaTele.sendText(msg_chat_id,msg_id,"\n*𖥔 عذرآ لا تستطيع استخدام الامر على مالك السورس *","md",true)  
+end
+if UserId == "2104604903" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*𖥔 عذرآ لا تستطيع استخدام الامر على مبرمج السورس *","md",true)  
 end
-if UserId == "5040650961" then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n*𖥔 عذرآ لا تستطيع استخدام الامر على مبرمج السورس *","md",true)  
+if UserId == "2011420301" then
+return LuaTele.sendText(msg_chat_id,msg_id,"\n*𖥔 عذرآ لا تستطيع استخدام الامر على مطورالسورس *","md",true)  
 end
 if Redis:sismember(aykafwra.."BanAll:Groups",UserId) then
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId,"𖥔 تم حظره عام من المجموعات مسبقا ").Reply,"md",true)  
@@ -5746,7 +5754,13 @@ if not msg.ControllerBot then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*𖥔هاذا الامر يخص⦗ '..Controller_Num(1)..' ⦘* ',"md",true)  
 end
 if UserId == "1878261073" then
+return LuaTele.sendText(msg_chat_id,msg_id,"\n*𖥔 عذرآ لا تستطيع استخدام الامر علىمالك السورس *","md",true)  
+end
+if UserId == "2104604903" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*𖥔 عذرآ لا تستطيع استخدام الامر على مبرمج السورس *","md",true)  
+end
+if UserId == "2011420301" then
+return LuaTele.sendText(msg_chat_id,msg_id,"\n*𖥔 عذرآ لا تستطيع استخدام الامر على مطور  السورس *","md",true)  
 end
 local ban = LuaTele.getUser(UserId)
 local bain = LuaTele.getUser(msg.sender.user_id)
