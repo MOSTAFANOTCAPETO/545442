@@ -3268,15 +3268,15 @@ Redis:srem(aykafwra.."Developers:Groups",bana.id)
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(bana.id,"𖥔 تم تنزيله مطور ").Reply,"md",true)  
 end
 end
-if UserName[1] == "مالك" then
+if UserName[1] == "ايكافورا" then
 if not msg.Developers then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*𖥔 هاذا الامر يخص { '..Controller_Num(3)..' }* ',"md",true)  
 end
 if not Redis:sismember(aykafwra.."TheBasicsQ:Group"..msg_chat_id,bana.id) then
-return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(bana.id,"𖥔 تم تنزيله مالك مسبقا ").Reply,"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(bana.id,"𖥔 تم تنزيله ايكافورا مسبقا ").Reply,"md",true)  
 else
 Redis:srem(aykafwra.."TheBasicsQ:Group"..msg_chat_id,bana.id) 
-return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(bana.id,"𖥔 تم تنزيله مالك ").Reply,"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(bana.id,"𖥔 تم تنزيله ايكافورا ").Reply,"md",true)  
 end
 end
 if UserName[1] == "منشئ اساسي" then
@@ -3412,15 +3412,15 @@ Redis:srem(aykafwra.."Developers:Groups",Message_Reply.sender.user_id)
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"𖥔 تم تنزيله مطور ").Reply,"md",true)  
 end
 end
-if TextMsg == "مالك" then
+if TextMsg == "ايكافورا" then
 if not msg.Developers then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*𖥔 هاذا الامر يخص { '..Controller_Num(3)..' }* ',"md",true)  
 end
 if not Redis:sismember(aykafwra.."TheBasicsQ:Group"..msg_chat_id,Message_Reply.sender.user_id) then
-return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"𖥔 تم تنزيله مالك مسبقا ").Reply,"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"𖥔 تم تنزيله ايكافورا مسبقا ").Reply,"md",true)  
 else
 Redis:srem(aykafwra.."TheBasicsQ:Group"..msg_chat_id,Message_Reply.sender.user_id) 
-return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"𖥔 تم تنزيله مالك ").Reply,"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"𖥔 تم تنزيله ايكافورا ").Reply,"md",true)  
 end
 end
 if TextMsg == "منشئ اساسي" then
@@ -3560,15 +3560,15 @@ Redis:srem(aykafwra.."Developers:Groups",UserId)
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId,"𖥔 تم تنزيله مطور ").Reply,"md",true)  
 end
 end
-if UserId[1] == "مالك" then
+if UserId[1] == "ايكافورا" then
 if not msg.Developers then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*𖥔 هاذا الامر يخص { '..Controller_Num(3)..' }* ',"md",true)  
 end
 if not Redis:sismember(aykafwra.."TheBasicsQ:Group"..msg_chat_id,UserId[2]) then
-return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId[2],"𖥔 تم تنزيله مالك مسبقا ").Reply,"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId[2],"𖥔 تم تنزيله ايكافورا مسبقا ").Reply,"md",true)  
 else
 Redis:srem(aykafwra.."TheBasicsQ:Group"..msg_chat_id,UserId[2]) 
-return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId[2],"𖥔 تم تنزيله مالك ").Reply,"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId[2],"𖥔 تم تنزيله ايكافورا ").Reply,"md",true)  
 end
 end
 if UserId[1] == "منشئ اساسي" then
@@ -3706,15 +3706,15 @@ Redis:sadd(aykafwra.."Developers:Groups",bana.id)
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(bana.id,"𖥔 تم ترقيته مطور ").Reply,"md",true)  
 end
 end
-if UserName[1] == "مالك" then
+if UserName[1] == "ايكافورا" then
 if not msg.Developers then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*𖥔 هاذا الامر يخص { '..Controller_Num(3)..' }* ',"md",true)  
 end
 if Redis:sismember(aykafwra.."TheBasicsQ:Group"..msg_chat_id,bana.id) then
-return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(bana.id,"𖥔 تم ترقيته مالك مسبقا ").Reply,"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(bana.id,"𖥔 تم ترقيته ايكافورا مسبقا ").Reply,"md",true)  
 else
 Redis:sadd(aykafwra.."TheBasicsQ:Group"..msg_chat_id,bana.id) 
-return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(bana.id,"𖥔 تم ترقيته مالك ").Reply,"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(bana.id,"𖥔 تم ترقيته ايكافورا ").Reply,"md",true)  
 end
 end
 if UserName[1] == "منشئ اساسي" then
@@ -3856,15 +3856,15 @@ Redis:sadd(aykafwra.."Developers:Groups",Message_Reply.sender.user_id)
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"𖥔 تم ترقيته مطور ").Reply,"md",true)  
 end
 end
-if TextMsg == "مالك" then
+if TextMsg == "ايكافورا" then
 if not msg.Developers then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*𖥔 هاذا الامر يخص { '..Controller_Num(3)..' }* ',"md",true)  
 end
 if Redis:sismember(aykafwra.."TheBasicsQ:Group"..msg_chat_id,Message_Reply.sender.user_id) then
-return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"𖥔 تم ترقيته مالك مسبقا ").Reply,"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"𖥔 تم ترقيته ايكافورا مسبقا ").Reply,"md",true)  
 else
 Redis:sadd(aykafwra.."TheBasicsQ:Group"..msg_chat_id,Message_Reply.sender.user_id) 
-return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"𖥔 تم ترقيته مالك ").Reply,"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"𖥔 تم ترقيته ايكافورا ").Reply,"md",true)  
 end
 end
 if TextMsg == "منشئ اساسي" then
@@ -4008,7 +4008,7 @@ Redis:sadd(aykafwra.."Developers:Groups",UserId)
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId,"𖥔 تم ترقيته مطور ").Reply,"md",true)  
 end
 end
-if UserId[1] == "مالك" then
+if UserId[1] == "ايكافورا" then
 if not msg.Developers then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*𖥔 هاذا الامر يخص { '..Controller_Num(3)..' }* ',"md",true)  
 end
@@ -4017,10 +4017,10 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اض�
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n𖥔 عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 if Redis:sismember(aykafwra.."TheBasicsQ:Group"..msg_chat_id,UserId[2]) then
-return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId[2],"𖥔 تم ترقيته مالك مسبقا ").Reply,"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId[2],"𖥔 تم ترقيته ايكافورا مسبقا ").Reply,"md",true)  
 else
 Redis:sadd(aykafwra.."TheBasicsQ:Group"..msg_chat_id,UserId[2]) 
-return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId[2],"𖥔 تم ترقيته مالك ").Reply,"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId[2],"𖥔 تم ترقيته ايكافورا ").Reply,"md",true)  
 end
 end
 if UserId[1] == "منشئ اساسي" then
@@ -6400,6 +6400,19 @@ local Rrr = Texting[math.random(#Texting)]
 local m = "https://t.me/xxxcccvvbbnn/"..Rrr..""
 local rep = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendaudio?chat_id="..msg_chat_id.."&caption="..URL.escape(t).."&audio="..m.."&reply_to_message_id="..rep.."&parse_mode=Markdown")
+end
+if text == "صورة" or text == 'صورخ' then
+local t = "اليك اغنيه عشوائيه من البوت"
+Num = math.random(8,83)
+Mhm = math.random(108,143)
+Mhhm = math.random(166,179)
+Mmhm = math.random(198,216)
+Mhmm = math.random(257,626)
+local Texting = {Num,Mhm,Mhhm,Mmhm,Mhmm}
+local Rrr = Texting[math.random(#Texting)]
+local m = "https://t.me/zi_ad_7/"..Rrr..""
+local rep = msg.id/2097152/0.5
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id="..msg_chat_id.."&caption="..URL.escape(t).."&photo="..m.."&reply_to_message_id="..rep.."&parse_mode=Markdown")
 end
 if text and text:match("(.*)(مين ضافني)(.*)") then
 local StatusMember = LuaTele.getChatMember(msg_chat_id,msg.sender.user_id).status.luatele
