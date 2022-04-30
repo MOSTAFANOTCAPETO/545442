@@ -6278,7 +6278,7 @@ local TestText = "  ❲ aykafwra  Source ❳\n— — — — — — — — �
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {{text = '< Developers ZIAD>', url = "https://t.me/X_x_Z_i_a_d_x_X"},{text = '< CHANNEL ZIAD >', url = "https://t.me/xz_i_a_dx"}},
-{{text = '< BOT ZIAD>', url = "https://t.me/Sngyp_BOT""}},
+{{text = '< BOT ZIAD>', url = "https://t.me/Sngyp_BOT"}},
 }
 local msg_id = msg.id/2097152/0.5 
  https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
@@ -6287,7 +6287,7 @@ local TestText = "- معلومات مطور السورس : \\nn: name Dev . ["..
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {{text = '< Developers ZIAD>', url = "https://t.me/X_x_Z_i_a_d_x_X"},{text = '< CHANNEL ZIAD >', url = "https://t.me/xz_i_a_dx"}},
-{{text = '< BOT ZIAD>', url = "https://t.me/Sngyp_BOT""}},
+{{text = '< BOT ZIAD>', url = "https://t.me/Sngyp_BOT"}},
 }
 local msg_id = msg.id/2097152/0.5 
  https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
@@ -12402,7 +12402,7 @@ local TestText = "  ❲ aykafwra  Source ❳\n— — — — — — — — �
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {{text = '< Developers ZIAD>', url = "https://t.me/X_x_Z_i_a_d_x_X"},{text = '< CHANNEL ZIAD >', url = "https://t.me/xz_i_a_dx"}},
-{{text = '< BOT ZIAD>', url = "https://t.me/Sngyp_BOT""}},
+{{text = '< BOT ZIAD>', url = "https://t.me/Sngyp_BOT"}},
 }
 local msg_id = msg.id/2097152/0.5 
  https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
@@ -12411,7 +12411,7 @@ local TestText = "- معلومات مطور السورس : \\nn: name Dev . ["..
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {{text = '< Developers ZIAD>', url = "https://t.me/X_x_Z_i_a_d_x_X"},{text = '< CHANNEL ZIAD >', url = "https://t.me/xz_i_a_dx"}},
-{{text = '< BOT ZIAD>', url = "https://t.me/Sngyp_BOT""}},
+{{text = '< BOT ZIAD>', url = "https://t.me/Sngyp_BOT"}},
 }
 local msg_id = msg.id/2097152/0.5 
  https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
