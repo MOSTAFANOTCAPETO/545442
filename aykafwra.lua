@@ -10684,17 +10684,26 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/NNAON/474&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
+iif text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
+local user_info = LuaTele.getUser(msg.sender.user_id)
+local first_name = user_info.first_name
+local RinkBot = msg.Name_Controller
 photo = "https://t.me/zi_ad_7/67"
-local Name = '* ╭───── •𖥔• ─────╮\n*𖥔 [𝚂𝙾𝚄𝚁𝙲𝙴 𝙰𝚈𝙺𝙰𝙵𝚆𝚁𝙰](t.me/xz_i_a_dx)*\n*𖥔 [𝙸𝙽𝙵𝙾 𝚂𝙾𝚄𝚁𝙲𝙴](t.me/xz_i_a_dx)*\n*𖥔 [CHANNEL 𝚃𝚆𝚂](t.me/zi_ad_7)*\n*𖥔 [𝙳𝙴𝚅 𝚂𝙾𝚄𝚁𝙲𝙴 ziad](t.me/X_x_Z_i_a_d_x_X)*\n*𖥔 [𝙳𝙴𝚅 𝚂𝙾𝚄𝚁𝙲𝙴 JACKSON](t.me/J_X_S4)*\n╰───── • 𖥔 • ─────╯\n⍟ 𝓣𝓗𝓔 𝓑𝓔𝓢𝓣 𝓞𝓝 𝓢𝓞𝓤𝓡𝓒𝓔 ⏎*'
+local Name = '*-The bot is provided by .*\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'اضف البوت الي مجموعتك✅', url = 't.me/'..UserBot..'?startgroup=new'}
+{text = 'Channel Source', url = "https://t.me/zi_ad_7"},
+},
+{
+{text = 'Dev Source', url = "https://t.me/X_x_Z_i_a_d_x_X"},{text = 'Bot', url = "https://t.me/Sngyp_BOT"},
+},
+{
+{text = 'Add In Group', url = "http://t.me/T6llbot?startgroup=new"}
 },
 }
 local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&photo="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'الاوامر' then
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*𖥔 هاذا الامر يخص⦗ '..Controller_Num(7)..' ⦘* ',"md",true)  
